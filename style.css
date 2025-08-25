@@ -1,0 +1,37 @@
+/* base styles */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid for main content */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+/*flexbox for nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: aqua;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
